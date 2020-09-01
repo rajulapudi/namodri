@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "deploy": "npm i && pm2 start ./bin/www --name namodri"
   },
   "dependencies": {
     "@sendgrid/mail": "7.1.0",
