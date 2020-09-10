@@ -1,0 +1,208 @@
+a {
+  outline: none;
+}
+
+.seo {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.seo .section-heading {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 100% "PT Sans Narrow", sans-serif;
+  color: #1a5260;
+  padding: 30px 0 0;
+  text-transform: uppercase;
+  background: white;
+}
+
+.seo .section-heading h2 {
+  font-size: 180%;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.seo .slider {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font: 100% "PT Sans Narrow", sans-serif;
+  color: #1a5260;
+  background: white;
+  padding: 10px 20px;
+}
+
+.seo .slider .slider-block {
+  width: calc(100% - 120px);
+  margin: 25px auto;
+  -webkit-box-flex: 2 1 auto;
+  -moz-box-flex: 2 1 auto;
+  -webkit-flex: 2 1 auto;
+  -ms-flex: 2 1 auto;
+  flex: 2 1 auto;
+  position: relative;
+}
+
+.seo .slider .slider-block p {
+  font-size: 120%;
+  padding: 10px;
+}
+
+.seo .slider .slider-block #slider-money::before,
+.seo .slider .slider-block #slider-date::before {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  top: -22px;
+  left: -65px;
+}
+
+.seo .slider .slider-block #slider-money::before {
+  content: "25k";
+}
+
+.seo .slider .slider-block #slider-date::before {
+  content: "1 m";
+}
+
+.seo .slider .slider-block #slider-money::after,
+.seo .slider .slider-block #slider-date::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  top: -22px;
+  right: -65px;
+}
+
+.seo .slider .slider-block #slider-money::after {
+  content: "5 lac";
+}
+
+.seo .slider .slider-block #slider-date::after {
+  content: "48 m";
+}
+
+.seo .slider .slider-count {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.seo .slider .slider-count div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  align-items: baseline;
+  text-align: center;
+}
+
+.seo .slider .slider-count div p {
+  min-width: 60px;
+  font-size: 130%;
+  padding: 0 10px;
+}
+
+.seo .slider .slider-count div span {
+  font-size: 150%;
+  padding: 0 5px;
+  border-bottom: 1px solid #11add1;
+}
+
+.seo .slider .noUi-target {
+  border: none;
+  border-bottom: 1px solid #11add1;
+  height: 5px;
+  background: white;
+  box-shadow: none;
+}
+
+.seo .slider .noUi-state-tap {
+  background-image: linear-gradient(#eeeeee, #11add1);
+}
+
+.seo .slider .noUi-horizontal .noUi-handle {
+  content: "";
+  width: 26px;
+  height: 15px;
+  left: -13px;
+  top: -5px;
+  position: relative;
+  color: white;
+}
+
+.seo .slider .noUi-horizontal .noUi-handle:hover::after {
+  background: #33cff3;
+}
+
+.seo .slider .noUi-horizontal .noUi-handle::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 15px;
+  left: 0;
+  top: 0;
+  color: white;
+  background: #11add1;
+}
+
+.seo .section-return-info {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 100% "PT Sans Narrow", sans-serif;
+  color: #1a5260;
+  padding: 30px 5px;
+  background: white;
+}
+
+.seo .section-return-info span {
+  padding: 0 3px;
+  font-size: 140%;
+}
+
+.seo .section-return-info span#return,
+.seo .section-return-info span#returnDate {
+  font-size: 180%;
+}
