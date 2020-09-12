@@ -17,7 +17,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font: 100% "PT Sans Narrow", sans-serif;
+  font: 100%  'Kumbh Sans', sans-serif;
   color: #1a5260;
   padding: 30px 0 0;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  font: 100% "PT Sans Narrow", sans-serif;
+  font: 100%  'Kumbh Sans', sans-serif;
   color: #1a5260;
   background: white;
   padding: 10px 20px;
@@ -140,19 +140,19 @@ a {
 .seo .slider .slider-count div span {
   font-size: 150%;
   padding: 0 5px;
-  border-bottom: 1px solid #11add1;
+  border-bottom: 1px solid #009cea;
 }
 
 .seo .slider .noUi-target {
   border: none;
-  border-bottom: 1px solid #11add1;
+  border-bottom: 1px solid #009cea;
   height: 5px;
   background: white;
   box-shadow: none;
 }
 
 .seo .slider .noUi-state-tap {
-  background-image: linear-gradient(#eeeeee, #11add1);
+  background-image: linear-gradient(#eeeeee, #009cea);
 }
 
 .seo .slider .noUi-horizontal .noUi-handle {
@@ -177,7 +177,7 @@ a {
   left: 0;
   top: 0;
   color: white;
-  background: #11add1;
+  background: #009cea;
 }
 
 .seo .section-return-info {
@@ -191,7 +191,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font: 100% "PT Sans Narrow", sans-serif;
+  font: 100%  'Kumbh Sans', sans-serif;
   color: #1a5260;
   padding: 30px 5px;
   background: white;
