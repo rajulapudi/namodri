@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #1eb4ff;
+  color: #a98400;
   text-decoration: none;
 }
 
@@ -56,7 +56,7 @@ h6 {
 }
 
 .back-to-top i:hover {
-  background: #14b1ff;
+  background: #a98400;
   color: #fff;
 }
 
@@ -398,7 +398,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #008bd1;
+  background: #a98400;
 }
 
 #hero .hero-img {
@@ -817,7 +817,7 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #008bd1;
+  background: #a98400;
 }
 
 @media (min-width: 1024px) {
