@@ -7,12 +7,13 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Tech Pranee - Web Development and Marketing" });
+  res.render("index");
 });
 router.get("/privacy", function (req, res, next) {
-  res.render("privacy", {
-    title: "Tech Pranee - Web Development and Marketing",
-  });
+  res.render("privacy");
+});
+router.get("/schemes", function (req, res, next) {
+  res.render("schemePage");
 });
 router.all("/connect", function (req, res, next) {
   let name = req.body.name;
@@ -47,6 +48,6 @@ router.all("/connect", function (req, res, next) {
     });
 });
 
-router.all("/blog", (req, res) => {});
+router.all("/blog", (req, res) => { });
 
 module.exports = router;
