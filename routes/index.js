@@ -9,19 +9,19 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 // cache.route(),
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
+router.get("/", cache.route(), function (req, res, next) {
   res.render("index");
 });
 router.get("/privacy", function (req, res, next) {
   res.render("privacy");
 });
-router.get("/schemes", function (req, res, next) {
+router.get("/schemes", cache.route(), function (req, res, next) {
   res.render("schemePage");
 });
-router.get("/about", function (req, res, next) {
+router.get("/about", cache.route(), function (req, res, next) {
   res.render("aboutPage");
 });
-router.get("/contact", function (req, res, next) {
+router.get("/contact", cache.route(), function (req, res, next) {
   res.render("contactPage");
 });
 router.all("/connect", function (req, res, next) {
