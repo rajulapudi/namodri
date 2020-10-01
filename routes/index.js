@@ -6,9 +6,10 @@ const ExpressRedisCache = require("express-redis-cache");
 const cache = ExpressRedisCache();
 require("dotenv").config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// cache.route(),
 
 /* GET home page. */
-router.get("/", cache.route(), function (req, res, next) {
+router.get("/", function (req, res, next) {
   res.render("index");
 });
 router.get("/privacy", function (req, res, next) {
@@ -16,6 +17,12 @@ router.get("/privacy", function (req, res, next) {
 });
 router.get("/schemes", function (req, res, next) {
   res.render("schemePage");
+});
+router.get("/about", function (req, res, next) {
+  res.render("aboutPage");
+});
+router.get("/contact", function (req, res, next) {
+  res.render("contactPage");
 });
 router.all("/connect", function (req, res, next) {
   let name = req.body.name;
