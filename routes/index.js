@@ -2,11 +2,13 @@ var express = require("express");
 var router = express.Router();
 const path = require("path");
 const sgMail = require("@sendgrid/mail");
+const ExpressRedisCache = require("express-redis-cache");
+const cache = ExpressRedisCache();
 require("dotenv").config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
+router.get("/", cache.route(), function (req, res, next) {
   res.render("index");
 });
 router.get("/privacy", function (req, res, next) {
@@ -48,6 +50,6 @@ router.all("/connect", function (req, res, next) {
     });
 });
 
-router.all("/blog", (req, res) => { });
+router.all("/blog", (req, res) => {});
 
 module.exports = router;
