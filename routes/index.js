@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const ExpressRedisCache = require("express-redis-cache");
-const cache = ExpressRedisCache();
+const cache = ExpressRedisCache({ prefix: "namodri" });
 
 router.get("/", cache.route(), function (req, res, next) {
   res.render("index");
