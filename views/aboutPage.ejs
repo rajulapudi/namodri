@@ -4,11 +4,15 @@
 
   <body>
     <%- include('nav'); -%>
-    <main id="main">
-      <%- include('about'); -%> <%- include('faqs'); -%> <%- include('contact');
-      -%>
-    </main>
+    <main id="main"><%- include('about'); -%> <%- include('faqs'); -%></main>
     <%- include('footer'); -%>
+    <a
+      href="https://api.whatsapp.com/send?phone=918096335448&text=I%20am%20looking%20for%20chit%20fund%20related%20information."
+      target="_blank"
+      class="whatsApp"
+    >
+      <img src="assets/img/whatsapp.png" alt="" width="40px" />
+    </a>
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
     <div id="preloader"></div>
 
